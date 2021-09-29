@@ -108,4 +108,3 @@ for var in "$@"; do
     [[ "$VERBOSE" != "n" ]] && echo -e "Extract time: $(($duration / 60)) minutes and $(($duration % 60)) seconds."
     [[ "$DUMPPUSH" == "y" ]] && bash "$PROJECT_DIR/tools/dump_push.sh" "$PROJECT_DIR/dumps/$UNZIP_DIR/"
     [[ "$DUMMYDT" == "y" ]] && bash "$PROJECT_DIR/tools/dummy_dt.sh" "$PROJECT_DIR/dumps/$UNZIP_DIR/"
-done
