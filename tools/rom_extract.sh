@@ -102,3 +102,4 @@ for var in "$@"; do
     fi
     [[ -e $PROJECT_DIR/dumps/${UNZIP_DIR}/board-info.txt ]] && sort -u -o $PROJECT_DIR/dumps/${UNZIP_DIR}/board-info.txt $PROJECT_DIR/dumps/${UNZIP_DIR}/board-info.txt
     find $PROJECT_DIR/dumps/${UNZIP_DIR} -type f -printf '%P\n' | sort | grep -v ".git/" > $PROJECT_DIR/dumps/${UNZIP_DIR}/all_files.txt
+    done
